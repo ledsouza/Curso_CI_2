@@ -14,6 +14,12 @@ jobs:
       matrix:
         go_version: ['1.18', '1.17', '>=1.18']
         os: ['ubuntu-latest', 'ubuntu-20.04']
+    env:
+      HOST: localhost
+      PORT: 5432
+      USER: root
+      PASSWORD: root
+      DBNAME: root
     steps:
     - uses: actions/checkout@v3
 
